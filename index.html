@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://kit.fontawesome.com/311c79818a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card-content">
+           
+            <div class="search-box">
+                <input type="text" placeholder="Enter your city" class="input-box">
+                <button id="search-btn"  class="fa-solid fa-magnifying-glass"></button>
+            </div>
+            
+            <div class="not-found">
+                <h1>Location not found</h1>;
+                <img src="" alt="">
+            </div>
+            
+            <div class="detail">
+                <div class="main-section">
+
+                    <h1 id="temp">0<sup>.c</sup></h1>
+                    <h2 id="city">Location</h2>
+                    <p class="feels">Fells like <span id="f">0<sup>.c</sup></span></p>
+                </div>
+
+                <div class="col-secton">
+                    <div class="col">
+                        <img src="./assets/humidity.png" >
+                        <div class="col-text">
+                            <p id="humadity">45%</p>
+                            <p>humadity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/wind.png" >
+                        <div class="col-text">
+                            <p id="wind">1</p>
+                            <p>km\h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="sky"></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
